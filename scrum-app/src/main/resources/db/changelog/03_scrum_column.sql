@@ -1,0 +1,2 @@
+ALTER TABLE task
+ADD COLUMN scrum_id INTEGER  REFERENCES scrum(id);

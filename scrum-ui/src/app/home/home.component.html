@@ -1,0 +1,17 @@
+<div class="page-container">
+  <div class="page-title">
+    <h1>Scrum Boards</h1>
+  </div>
+  <div>
+    <button mat-raised-button (click)="openDialogForNewScrum()">+ Create Scrum</button>
+  </div>
+
+  <div class="main-card">
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let scrum of scrumList" routerLink="/scrums/{{scrum.id}}">
+        <p class="scrum-title">{{scrum.title}}</p>
+      </a>
+    </mat-nav-list>
+  </div>
+</div>
+
